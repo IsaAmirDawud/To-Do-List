@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #F95700FF, #FFFFFFFF);
+}
+
+header{
+    padding: 10px 8%; 
+    background: linear-gradient(135deg, rgb(201, 70, 0), rgb(255, 114, 39));
+}
+
+nav {
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; 
+}
+
+p {
+    font-size: 30px; 
+}
+
+nav ul {
+    list-style: none;
+    width: 100%; 
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px; 
+    font-size: 18px;
+    color: #fff; 
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.settings-btn{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-list-app{
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+
+.todo-list-app h1{
+    color: #002765;
+    margin-bottom: 20px;
+}
+
+.add-task-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.task-input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px; 
+    outline: none;
+}
+
+.add-task-btn{
+    display: inline-flex;
+    border: none; 
+    padding: 16px 50px;
+    background: #ff8e52;
+    color: #fff; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 40px;
+    z-index: 1;
+    position: relative;
+    transition: .5s ease;
+}
+
+.add-task-btn:hover{
+    background: #af3f02;
+}
+
+.tasks-container div {
+    position: relative;
+    margin: 20px;
+}
+
+span{
+    position: relative;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px; 
+    cursor: pointer;
+    position: relative;
+}
+
+span::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px; 
+    border-radius: 50%; 
+    background-image: url(images/circle.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+}
+
+span.checked {
+    text-decoration: line-through;
+    color: #555; 
+}
+
+span.checked::before{
+    background-image: url(images/Checkmark.jpg);
+}
+
+.tasks-container i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tasks-container i:hover{
+    background: #edeef0; 
+}
+
+.tasks-container div p {
+    position: absolute; 
+    left: 55px; 
+    font-size: 12px;
+}
+
+.set-time-dialog, .input-time-dialog{
+    margin: 110px auto; 
+    border: 0; 
+    width: 540px; 
+    padding: 40px 30px 70px; 
+    border-radius: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.set-time-dialog h1 {
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.set-time-dialog div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    border: none; 
+    padding: 16px 50px;
+    background: #ff8e52;
+    color: #fff; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 30px 20px 0; 
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: #af3f02;
+}
+
+.input-time-dialog {
+    padding-bottom: 189px;
+}
+
+.input-time-dialog .btn {
+    position: absolute;
+    margin: 0; 
+    right: 50px;
+    top: 89px;    
+}
+
+.input-time-dialog input {
+    position: absolute;
+    left: 70px; 
+    top: 97px; 
+    font-size: 30px;
+    outline: none;
+    border: none; 
+    color: #002765; 
+    font-weight: 900;
+}

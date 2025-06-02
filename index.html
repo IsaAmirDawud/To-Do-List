@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p>📝</p>
+            <ul >
+                <li id="military-or-standard-time"></li>
+            </ul>
+            <!--<p id="settings-btn" class="settings-btn">⚙️</p>-->
+        </nav>
+    </header>
+    <main>
+        <div id="todo-list-app" class="todo-list-app">
+            <h1>To-Do List</h1>
+
+            <div class="add-task-container">
+                <input id="input-task" class="task-input" type="text" value=""> 
+                <button id="add-task-btn" class="add-task-btn" type="button">Add Task</button>
+            </div>
+
+            <div id="tasks-container" class="tasks-container">
+                
+            </div>
+
+            <dialog id="set-time-dialog" class="set-time-dialog">
+                <h1>Set time?</h1>
+                <div>
+                    <button type="button" id="yes-btn" class="btn">Yes</button>
+                    <button type="button" id="no-btn" class="btn">No</button>
+                </div>
+            </dialog>
+
+            <dialog id="input-time-dialog" class="input-time-dialog">
+                <input id="input-time" class="input-time" type="time" value="">
+                <button type="button" id="set-time-btn" class="btn">Set time</button>
+            </dialog>
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/361a5a6634.js" crossorigin="anonymous"></script>
+</body>
+</html> 
